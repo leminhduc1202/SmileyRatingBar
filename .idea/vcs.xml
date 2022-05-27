@@ -1,60 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/Admob" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Android Basics Kotlin Words app" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/AnimationInKotlin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/BaseCode" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/BaseProject" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ComposeBird" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ComposeSPCompany" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/CryptoMania" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Custom Rating Bar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Dagger2-Sample" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/DaggerSample" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/DiabloImmortalCharacter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/E-Gold" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Exchange-Rates" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ExpandableListView" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Firebase-Authentication-Tutorial-2019" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/FlutterBase" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Game2048" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Game2048mdapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/GetApi" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/GoldPriceMDapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/GoogleFirebaseFirestore" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/GronClubProfile" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/KedditBySteps" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/KotlinAndroidExamples" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/KotlinBasicsApp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/KotlinBasicsMDapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/LearnJetpackCompose" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MVVMNewsApp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MyMoviesAhmads4" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MyMoviesMDapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MyNoteMDapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Pokedex" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RecyclerViewInsideRecyclerViewExample" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Retrogamer-Compose" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SimpleFABExample" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SmartScanner-master - Gianh project/SmartScanner-master" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SongPhuApp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SongPhuCompany" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/TODO_App" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/TicTacToe" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/TodoList" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/WallpaperMDapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/WeatherMDapp" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/android-basics-kotlin-bus-schedule-app" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/android-basics-kotlin-inventory-app" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/android-basics-kotlin-lunch-tray-app" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/android-basics-kotlin-sql-basics-app" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/android-compose-codelabs" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/appmovie" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/architecture-samples" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/firebase-realtime-database-tutorial" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/forecast-mvvm-android-kotlin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/searchViewInRoom-master/searchViewInRoom-master" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/views-widgets-samples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
