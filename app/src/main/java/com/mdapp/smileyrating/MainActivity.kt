@@ -37,19 +37,43 @@ class MainActivity : AppCompatActivity() {
             override fun onStartTrackingTouch(p0: SeekBar?) {}
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
+//                when (progressBar) {
+//                    in 0..20 -> p0?.progress = 0
+//                    in 21..40 -> p0?.progress = 20
+//                    in 41..60 -> p0?.progress = 40
+//                    in 61..80 -> p0?.progress = 60
+//                    else -> p0?.progress = 100
+//                }
+//                when (progressBar) {
+//                    in 0..20 -> binding.tvRating.text = "Never"
+//                    in 21..40 -> binding.tvRating.text = "Highly Unlikely"
+//                    in 41..60 -> binding.tvRating.text = "Neutral"
+//                    in 61..80 -> binding.tvRating.text = "Likely"
+//                    else -> binding.tvRating.text = "Highly Likely"
+//                }
+
                 when (progressBar) {
-                    in 0..20 -> p0?.progress = 0
-                    in 21..40 -> p0?.progress = 20
-                    in 41..60 -> p0?.progress = 40
-                    in 61..80 -> p0?.progress = 60
-                    else -> p0?.progress = 100
-                }
-                when (progressBar) {
-                    in 0..20 -> binding.tvRating.text = "Never"
-                    in 21..40 -> binding.tvRating.text = "Highly Unlikely"
-                    in 41..60 -> binding.tvRating.text = "Neutral"
-                    in 61..80 -> binding.tvRating.text = "Likely"
-                    else -> binding.tvRating.text = "Highly Likely"
+                    in 80..100 -> let {
+                        p0?.progress = 100
+                        binding.tvRating.text = "Highly Likely"
+                    }
+                    in 60..79 -> let {
+                        p0?.progress = 80
+                        binding.tvRating.text = "Highly Unlikely"
+                    }
+                    in 40..59 -> let {
+                        p0?.progress = 60
+                        binding.tvRating.text = "Likely"
+                    }
+                    in 20..39 -> let {
+                        p0?.progress = 40
+                        binding.tvRating.text = "Neutral"
+                    }
+                    else -> let {
+                        p0?.progress = 0
+                        binding.tvRating.text = "Never"
+                    }
+
                 }
 
             }
