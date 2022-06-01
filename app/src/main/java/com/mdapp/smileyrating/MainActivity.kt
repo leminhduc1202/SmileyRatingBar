@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 //            binding.smileyView.setSmiley(rating = rating)
 //        }
 //animation text run left to right
-        binding.textRun.startAnimation(AnimationUtils.loadAnimation(this, translate))
+//        binding.textRun.startAnimation(AnimationUtils.loadAnimation(this, translate))
 
 //animation SeekBar and lottie
         var progressBar = 0
@@ -83,9 +83,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnShowDialog.setOnClickListener{
             val fragment = supportFragmentManager.beginTransaction()
-            fragment.replace(R.id.ctLayout, NpsFragment())
+            fragment.replace(R.id.ctMiddle, NpsFragment())
             fragment.commit()
+        }
 
+        binding.btnSmiley.setOnClickListener{
+            val fragment = supportFragmentManager.beginTransaction()
+            fragment.replace(R.id.ctMiddle, SmileyFragment())
+            fragment.commit()
         }
 
     }

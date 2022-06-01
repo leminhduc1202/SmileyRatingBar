@@ -12,4 +12,7 @@
     <string name="never">Never</string>
     <string name="back">Back</string>
     <string name="feedback_content">Success! Thank you for submitting your feedback!</string>
+    <string name="show_smiley">Show Smiley</string>
+    <string name="submit">Submit</string>
+    <string name="write_your_review">Write your Review</string>
 </resources>
