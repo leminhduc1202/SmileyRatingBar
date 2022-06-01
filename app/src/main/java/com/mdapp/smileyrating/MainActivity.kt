@@ -7,6 +7,7 @@ import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import com.mdapp.smileyrating.R.anim.translate
 import com.mdapp.smileyrating.databinding.ActivityMainBinding
+import com.mdapp.smileyrating.screen.NpsFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -55,23 +56,23 @@ class MainActivity : AppCompatActivity() {
                 when (progressBar) {
                     in 80..100 -> let {
                         p0?.progress = 100
-                        binding.tvRating.text = "Highly Likely"
+                        binding.tvRating.text = getString(R.string.highly_likely)
                     }
                     in 60..79 -> let {
                         p0?.progress = 80
-                        binding.tvRating.text = "Highly Unlikely"
+                        binding.tvRating.text = getString(R.string.likely)
                     }
                     in 40..59 -> let {
                         p0?.progress = 60
-                        binding.tvRating.text = "Likely"
+                        binding.tvRating.text = getString(R.string.neutral)
                     }
                     in 20..39 -> let {
                         p0?.progress = 40
-                        binding.tvRating.text = "Neutral"
+                        binding.tvRating.text = getString(R.string.highly_unlikely)
                     }
                     else -> let {
                         p0?.progress = 0
-                        binding.tvRating.text = "Never"
+                        binding.tvRating.text = getString(R.string.never)
                     }
 
                 }
@@ -79,6 +80,12 @@ class MainActivity : AppCompatActivity() {
             }
         })
 //animation SeekBar and lottie
+
+        binding.btnShowDialog.setOnClickListener{
+            val fragment = supportFragmentManager.beginTransaction()
+            fragment.replace(R.id.ctLayout, NpsFragment())
+            fragment.commit()
+        }
 
     }
 }

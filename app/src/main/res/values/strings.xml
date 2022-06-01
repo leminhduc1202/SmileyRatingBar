@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">smileyrating</string>
+    <string name="ipc_recommend">Would you recommend IPC to your friends?</string>
+    <string name="ipc_content">Drag the slider below to rate your experience with us!</string>
+    <string name="ipc_submit">Submit</string>
+    <string name="ipc_skip">Skip</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="highly_likely">Highly Likely</string>
+    <string name="highly_unlikely">Highly Unlikely</string>
+    <string name="likely">Likely</string>
+    <string name="neutral">Neutral</string>
+    <string name="never">Never</string>
+    <string name="back">Back</string>
+    <string name="feedback_content">Success! Thank you for submitting your feedback!</string>
 </resources>

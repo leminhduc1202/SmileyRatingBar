@@ -7,4 +7,100 @@
         <attr name="mouth_color" format="color" />
         <attr name="default_rating" format="integer" />
     </declare-styleable>
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference" />
+        <attr name="assetName" format="string" />
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="quickScaleEnabled" format="boolean" />
+        <attr name="tileBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiViewPager">
+        <!-- Child view inside a page to match the page size against. -->
+        <attr name="matchChildWidth" format="reference" />
+        <!-- Maximum size. -->
+        <attr name="android:maxWidth" />
+        <!-- Maximum size. -->
+        <attr name="android:maxHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="PrimaryButton">
+        <attr name="pb_text" format="string" />
+        <attr name="pb_textSize" format="dimension" />
+        <attr name="pb_marginTop" format="dimension" />
+        <attr name="pb_marginBottom" format="dimension" />
+        <attr name="pb_marginHorizontal" format="dimension" />
+        <attr name="pb_style" format="string" />
+        <attr name="pb_leftDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PrimaryInputView">
+        <attr name="piv_inputType" format="string" />
+        <attr name="piv_hint" format="string" />
+        <attr name="piv_style" format="string" />
+        <attr name="piv_is_area" format="boolean" />
+        <attr name="piv_text" format="string" />
+        <attr name="piv_text_color" format="color" />
+        <attr name="android:fontFamily" />
+    </declare-styleable>
+
+    <declare-styleable name="SecondInputView">
+        <attr name="siv_inputType" format="string" />
+        <attr name="siv_hint" format="string" />
+        <attr name="siv_title" format="string" />
+        <attr name="siv_is_require_field" format="boolean" />
+        <attr name="siv_icon" format="reference" />
+        <attr name="siv_is_show_edt_icon" format="boolean" />
+        <attr name="siv_is_focusable_in_touch_mode" format="boolean" />
+        <attr name="siv_max_length" format="integer" />
+        <attr name="siv_is_sign_up" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TouchScrollBar">
+        <attr name="msb_hideDelayInMilliseconds" format="integer|reference" />
+        <attr name="msb_autoHide" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ToolBarView">
+        <attr name="tb_show_back" format="boolean|reference" />
+        <attr name="tb_show_help" format="boolean|reference" />
+        <attr name="tb_show_title" format="boolean|reference" />
+        <attr name="tb_title_color" format="color|reference" />
+        <attr name="tb_title" format="string|reference" />
+        <attr name="tb_bg_color" format="color|reference" />
+        <attr name="tb_back_color" format="color|reference" />
+        <attr name="tb_display_three_dot_title" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleScrollBar">
+        <attr name="scrollbarBackground" format="color|reference" />
+        <attr name="scrollbarWidth" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+        <attr name="thumbBackground" format="reference" />
+        <attr name="bubbleBackground" format="reference" />
+        <attr name="bubbleMargin" format="dimension" />
+        <attr name="bubblePadding" format="dimension" />
+        <attr name="bubbleTextSize" format="dimension" />
+        <attr name="bubbleTextColor" format="color" />
+        <attr name="bubbleMinWidth" format="dimension" />
+        <attr name="bubbleHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StampsCollector">
+        <attr name="st_is_tack_club_stamp" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PrimarySpinnerView">
+        <attr name="psv_text_title" format="string" />
+        <attr name="psv_text_hint" format="string" />
+        <attr name="psv_text_error" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PrimaryDropdown">
+        <attr name="dd_text_title" format="string" />
+        <attr name="dd_text_hint" format="string" />
+        <attr name="dd_text_error" format="string" />
+        <attr name="dd_margin_bottom" format="dimension" />
+    </declare-styleable>
 </resources>
