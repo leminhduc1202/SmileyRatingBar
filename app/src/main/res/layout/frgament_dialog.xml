@@ -64,6 +64,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/sbProgress"
                 app:layout_constraintTop_toTopOf="@id/sbProgress"
                 app:layout_constraintEnd_toEndOf="@id/sbProgress"
@@ -75,7 +76,7 @@
 
             <SeekBar
                 android:id="@+id/sbProgress"
-                android:progress="110"
+                android:progress="60"
                 android:max="120"
                 android:splitTrack="false"
                 android:progressBackgroundTint="@color/white"
@@ -109,7 +110,7 @@
                 android:id="@+id/tvDesConfirm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_70dp"
+                android:layout_marginHorizontal="@dimen/dimen_50dp"
                 android:layout_marginTop="@dimen/size_13dp"
                 android:fontFamily="@font/ikanosans_light"
                 android:lineSpacingExtra="@dimen/dp_4"
@@ -144,6 +145,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/dimen_37dp"
+                tools:src="@drawable/ic_logo"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

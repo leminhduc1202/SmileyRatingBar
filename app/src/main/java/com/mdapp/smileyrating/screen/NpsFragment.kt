@@ -49,7 +49,7 @@ class NpsFragment : Fragment() {
             override fun onStopTrackingTouch(p0: SeekBar?) {
                 when (seekBarProgress){
 
-                    in 80..109 -> let {
+                    in 80..120 -> let {
                         p0?.progress = 110
                         binding.tvRating.text = getString(R.string.highly_likely)
                     }
