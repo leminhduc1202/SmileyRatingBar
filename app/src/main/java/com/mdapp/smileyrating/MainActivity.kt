@@ -85,6 +85,7 @@ class MainActivity : AppCompatActivity() {
             val fragment = supportFragmentManager.beginTransaction()
             fragment.replace(R.id.ctLayout, NpsFragment())
             fragment.commit()
+
         }
 
     }

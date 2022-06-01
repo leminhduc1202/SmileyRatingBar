@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
-import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.FrgamentDialogBinding
@@ -31,12 +30,16 @@ class NpsFragment : Fragment() {
     }
 
     private fun handleEvent() {
-        var processBar = 0
+        binding.animationView.progress = 1f
+        binding.tvRating.text =  getString(R.string.highly_likely)
+        binding.sbProgress.progress = 110
+
+        var seekBarProgress = 0
         binding.sbProgress.setOnSeekBarChangeListener(@SuppressLint("AppCompatCustomView")
         object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
                 binding.animationView.progress = (p1.toFloat() /100)
-                processBar = p1
+                seekBarProgress = p1
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
@@ -44,9 +47,10 @@ class NpsFragment : Fragment() {
             }
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
-                when (processBar){
-                    in 80..100 -> let {
-                        p0?.progress = 100
+                when (seekBarProgress){
+
+                    in 80..109 -> let {
+                        p0?.progress = 110
                         binding.tvRating.text = getString(R.string.highly_likely)
                     }
                     in 60..79 -> let {
@@ -57,12 +61,12 @@ class NpsFragment : Fragment() {
                         p0?.progress = 60
                         binding.tvRating.text = getString(R.string.neutral)
                     }
-                    in 20..39 -> let {
+                    in 10..39 -> let {
                         p0?.progress = 40
                         binding.tvRating.text = getString(R.string.highly_unlikely)
                     }
-                    else -> let {
-                        p0?.progress = 0
+                    in 0..9 ->let{
+                        p0?.progress = 10
                         binding.tvRating.text = getString(R.string.never)
                     }
                 }
