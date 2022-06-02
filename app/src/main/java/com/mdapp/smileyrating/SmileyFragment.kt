@@ -33,6 +33,10 @@ class SmileyFragment : Fragment() {
             binding.cvSmiley.visibility = View.GONE
         }
 
+        binding.ratingBar.setOnRatingBarChangeListener { _, rating, _ ->
+            binding.smileyView.setSmiley(rating = rating)
+        }
+
 
     }
 

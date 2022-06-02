@@ -5,8 +5,10 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.LayoutInflater
+import android.view.TextureView
 import android.view.View
 import android.view.View.OnClickListener
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import com.mdapp.smileyrating.R
@@ -17,7 +19,7 @@ class PrimaryButton @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
 
-    private lateinit var binding: LayoutPrimaryButtonBinding
+    private var binding: LayoutPrimaryButtonBinding ?= null
 
     companion object {
         const val DEFAULT_STYLE = "default"
@@ -35,12 +37,12 @@ class PrimaryButton @JvmOverloads constructor(
 
     var buttonText: String? = null
         set(value) {
-            binding.nameBtn.text = value
+            binding?.nameBtn?.text = value
             field = value
         }
     private var isLoading: Boolean? = null
         set(value) {
-            binding.nameBtn.handleGoneVisibility(value != true)
+            binding?.nameBtn?.handleGoneVisibility(value != true)
             field = value
         }
 
@@ -51,23 +53,23 @@ class PrimaryButton @JvmOverloads constructor(
         }
     private var textSize: Float = 0f
         set(value) {
-            binding.nameBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, value)
+            binding?.nameBtn?.setTextSize(TypedValue.COMPLEX_UNIT_PX, value)
             field = value
         }
     private var marginTop: Int = 0
         set(value) {
-            binding.nameBtn.setMargins(top = value)
+            binding?.nameBtn?.setMargins(top = value)
             field = value
         }
     private var marginBottom: Int = 0
         set(value) {
-            binding.nameBtn.setMargins(bottom = value)
+            binding?.nameBtn?.setMargins(bottom = value)
             field = value
         }
     private var leftDrawable: Drawable? = null
         set(value) {
             value?.let {
-                binding.nameBtn.setCompoundDrawablesWithIntrinsicBounds(
+                binding?.nameBtn?.setCompoundDrawablesWithIntrinsicBounds(
                     leftDrawable,
                     null,
                     null,
@@ -79,7 +81,7 @@ class PrimaryButton @JvmOverloads constructor(
 
     private var marginHorizontal: Int = 0
         set(value) {
-            binding.nameBtn.setMargins(start = value, end = value)
+            binding?.nameBtn?.setMargins(start = value, end = value)
             field = value
         }
 
@@ -88,32 +90,32 @@ class PrimaryButton @JvmOverloads constructor(
     }
 
     fun updateButtonText(text: String) {
-        binding.nameBtn.text = text
+        binding?.nameBtn?.text = text
     }
 
     fun selfClick() {
-        binding.layoutContainer.performClick()
+        binding?.layoutContainer?.performClick()
     }
 
     fun handleEnable(isEnabled: Boolean) {
-        binding.layoutContainer.isEnabled = isEnabled
+        binding?.layoutContainer?.isEnabled = isEnabled
         if (isEnabled) {
             updateTextButtonStyle(buttonStyle)
         } else {
             when (buttonStyle) {
-                TERTIARY_STYLE -> binding.nameBtn.setTextColor(
+                TERTIARY_STYLE -> binding?.nameBtn?.setTextColor(
                     ContextCompat.getColor(
                         context,
                         R.color.mercuryapprox
                     )
                 )
-                QUATERNARY_STYLE -> binding.nameBtn.setTextColor(
+                QUATERNARY_STYLE -> binding?.nameBtn?.setTextColor(
                     ContextCompat.getColor(
                         context,
                         R.color.gray_two_b_main_color
                     )
                 )
-                else -> binding.nameBtn.setTextColor(
+                else -> binding?.nameBtn?.setTextColor(
                     ContextCompat.getColor(
                         context,
                         R.color.white1
@@ -134,30 +136,30 @@ class PrimaryButton @JvmOverloads constructor(
         updateTextButtonStyle(style)
         when (style) {
             DEFAULT_STYLE -> {
-                binding.layoutContainer.setBackgroundResource(R.drawable.primary_button_background_selector)
+                binding?.layoutContainer?.setBackgroundResource(R.drawable.primary_button_background_selector)
             }
             SECONDARY_STYLE -> {
-                binding.layoutContainer.setBackgroundResource(R.drawable.primary_button_background_circle_selector)
-                binding.layoutContainer.layoutParams = LayoutParams(
+                binding?.layoutContainer?.setBackgroundResource(R.drawable.primary_button_background_circle_selector)
+                binding?.layoutContainer?.layoutParams = LayoutParams(
                     context.resources.getDimensionPixelOffset(R.dimen.dp_40),
                     context.resources.getDimensionPixelOffset(R.dimen.dp_40)
                 )
-                binding.nameBtn.gone()
-                binding.imgbtn.visible()
+                binding?.nameBtn?.gone()
+                binding?.imgbtn?.visible()
                 if (buttonText == TEXT_SHOW_BUTTON_PLUS) {
-                    binding.imgbtn.setImageResource(R.drawable.ic_plus)
+                    binding?.imgbtn?.setImageResource(R.drawable.ic_plus)
                 } else {
-                    binding.imgbtn.setImageResource(R.drawable.ic_minus)
+                    binding?.imgbtn?.setImageResource(R.drawable.ic_minus)
                 }
             }
             TERTIARY_STYLE -> {
-                binding.layoutContainer.setBackgroundResource(R.drawable.secondary_button_background_selector)
+                binding?.layoutContainer?.setBackgroundResource(R.drawable.secondary_button_background_selector)
             }
             QUATERNARY_STYLE -> {
-                binding.layoutContainer.setBackgroundResource(R.drawable.primary_button_background_selector)
+                binding?.layoutContainer?.setBackgroundResource(R.drawable.primary_button_background_selector)
             }
             else -> {
-                binding.layoutContainer.setBackgroundResource(R.drawable.primary_button_background_selector)
+                binding?.layoutContainer?.setBackgroundResource(R.drawable.primary_button_background_selector)
             }
         }
     }
@@ -165,13 +167,13 @@ class PrimaryButton @JvmOverloads constructor(
     private fun updateTextButtonStyle(style: String?) {
         when (style) {
             DEFAULT_STYLE -> {
-                binding.nameBtn.setTextColor(ContextCompat.getColor(context, android.R.color.white))
+                binding?.nameBtn?.setTextColor(ContextCompat.getColor(context, android.R.color.white))
             }
             SECONDARY_STYLE -> {
-                binding.nameBtn.setTextColor(ContextCompat.getColor(context, android.R.color.white))
+                binding?.nameBtn?.setTextColor(ContextCompat.getColor(context, android.R.color.white))
             }
             TERTIARY_STYLE -> {
-                binding.nameBtn.setTextColor(
+                binding?.nameBtn?.setTextColor(
                     ContextCompat.getColorStateList(
                         context,
                         R.color.tab_text_selector
@@ -179,10 +181,10 @@ class PrimaryButton @JvmOverloads constructor(
                 )
             }
             QUATERNARY_STYLE -> {
-                binding.nameBtn.setTextColor(ContextCompat.getColor(context, android.R.color.white))
+                binding?.nameBtn?.setTextColor(ContextCompat.getColor(context, android.R.color.white))
             }
             else -> {
-                binding.nameBtn.setTextColor(ContextCompat.getColor(context, android.R.color.white))
+                binding?.nameBtn?.setTextColor(ContextCompat.getColor(context, android.R.color.white))
             }
         }
     }
@@ -208,7 +210,7 @@ class PrimaryButton @JvmOverloads constructor(
     }
 
     private fun handleEvent() {
-        binding.layoutContainer.safeClick(OnClickListener {
+        binding?.layoutContainer?.safeClick(OnClickListener {
             if (!isLoading()) {
                 hideSoftKeyBoard()
                 listener?.onClick(it)

@@ -2,10 +2,9 @@ package com.mdapp.smileyrating
 
 import android.os.Bundle
 import android.util.Log
-import android.view.animation.AnimationUtils
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
-import com.mdapp.smileyrating.R.anim.translate
+import androidx.core.content.ContextCompat
 import com.mdapp.smileyrating.databinding.ActivityMainBinding
 import com.mdapp.smileyrating.screen.NpsFragment
 
@@ -81,17 +80,36 @@ class MainActivity : AppCompatActivity() {
         })
 //animation SeekBar and lottie
 
-        binding.btnShowDialog.setOnClickListener{
+        binding.tvShowDialog.setOnClickListener{
             val fragment = supportFragmentManager.beginTransaction()
             fragment.replace(R.id.ctMiddle, NpsFragment())
             fragment.commit()
+            onShowDialog()
         }
 
-        binding.btnSmiley.setOnClickListener{
+        binding.tvShowSmiley.setOnClickListener{
             val fragment = supportFragmentManager.beginTransaction()
             fragment.replace(R.id.ctMiddle, SmileyFragment())
             fragment.commit()
+            onShowSmiley()
         }
 
+
+
+    }
+    private fun onShowDialog() {
+        binding.tvShowDialog.setTextColor(ContextCompat.getColor(baseContext, R.color.white))
+        binding.tvShowDialog.background =
+            ContextCompat.getDrawable(baseContext, R.drawable.background_cobalt_radius_41)
+        binding.tvShowSmiley.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
+        binding.tvShowSmiley.background = null
+    }
+
+    private fun onShowSmiley(){
+        binding.tvShowSmiley.setTextColor(ContextCompat.getColor(baseContext, R.color.white))
+        binding.tvShowSmiley.background =
+            ContextCompat.getDrawable(baseContext, R.drawable.background_cobalt_radius_41)
+        binding.tvShowDialog.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
+        binding.tvShowDialog.background = null
     }
 }
