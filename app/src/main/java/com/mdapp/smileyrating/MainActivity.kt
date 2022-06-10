@@ -94,6 +94,10 @@ class MainActivity : AppCompatActivity() {
             onShowSmiley()
         }
 
+        binding.tvShowUpdate.setOnClickListener {
+            onShowUpdate()
+        }
+
 
 
     }
@@ -103,6 +107,8 @@ class MainActivity : AppCompatActivity() {
             ContextCompat.getDrawable(baseContext, R.drawable.background_cobalt_radius_41)
         binding.tvShowSmiley.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
         binding.tvShowSmiley.background = null
+        binding.tvShowUpdate.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
+        binding.tvShowUpdate.background = null
     }
 
     private fun onShowSmiley(){
@@ -111,5 +117,17 @@ class MainActivity : AppCompatActivity() {
             ContextCompat.getDrawable(baseContext, R.drawable.background_cobalt_radius_41)
         binding.tvShowDialog.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
         binding.tvShowDialog.background = null
+        binding.tvShowUpdate.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
+        binding.tvShowUpdate.background = null
+    }
+
+    private fun onShowUpdate(){
+        binding.tvShowUpdate.setTextColor(ContextCompat.getColor(baseContext, R.color.white))
+        binding.tvShowUpdate.background =
+            ContextCompat.getDrawable(baseContext, R.drawable.background_cobalt_radius_41)
+        binding.tvShowDialog.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
+        binding.tvShowDialog.background = null
+        binding.tvShowSmiley.setTextColor(ContextCompat.getColor(baseContext, R.color.cobalt))
+        binding.tvShowSmiley.background = null
     }
 }
