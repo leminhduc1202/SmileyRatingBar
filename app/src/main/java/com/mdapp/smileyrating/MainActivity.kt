@@ -1,11 +1,13 @@
 package com.mdapp.smileyrating
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mdapp.smileyrating.databinding.ActivityMainBinding
+import com.mdapp.smileyrating.ipcupdate.SplashScreenIPC
 import com.mdapp.smileyrating.screen.NpsFragment
 
 
@@ -96,6 +98,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.tvShowUpdate.setOnClickListener {
             onShowUpdate()
+            val intent = Intent(this, SplashScreenIPC::class.java)
+            startActivity(intent)
         }
 
 

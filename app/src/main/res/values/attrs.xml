@@ -103,4 +103,8 @@
         <attr name="dd_text_error" format="string" />
         <attr name="dd_margin_bottom" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="IndicatorLayout">
+        <attr name="indicatorCount" format="integer"/>
+    </declare-styleable>
 </resources>
