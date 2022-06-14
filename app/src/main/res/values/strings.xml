@@ -17,8 +17,8 @@
     <string name="submit">Submit</string>
     <string name="write_your_review">Write your Review</string>
 
-<!--    IPC Update content-->
-<!--    Splash screen-->
+    <!--    IPC Update content-->
+    <!--    Splash screen-->
     <string name="well_come">Hej, welcome to IPC!</string>
     <string name="splash_screen_1">Collect points to redeem personalised rewards &amp; e-vouchers</string>
     <string name="splash_screen_2">Member-exclusive event &amp; promos</string>
@@ -28,10 +28,10 @@
     <string name="log_in">Login</string>
     <string name="maybe_later">Maybe later</string>
     <string name="next">Next</string>
-<!--Sign up & on boarding-->
+    <!--Sign up & on boarding-->
     <string name="sign_up_1">What is your race?</string>
-    <string name="sign_up_2">Prefer not to say</string>
-    <string name="sign_up_3">Why we ask</string>
+    <string name="sign_up_2"><u>Prefer not to say</u></string>
+    <string name="sign_up_3"><u>Why we ask</u></string>
     <string name="sign_up_race_1">Malay</string>
     <string name="sign_up_race_2">Chinese</string>
     <string name="sign_up_race_3">Indian</string>
@@ -40,7 +40,7 @@
     <string name="sign_up_interests_1">Select any areas of your interest so that we can personalise your experience better!</string>
     <string name="sign_up_interests_2">Registration completed!</string>
     <string name="sign_up_interests_3">By checking this, I agree that my information provided is for IPC\'s internal use &amp; for personalising my IPC app experience only.</string>
-<!--   Avatar: on boarding flow  -->
+    <!--   Avatar: on boarding flow  -->
     <string name="avatar_on_board_1">Now for the fun part</string>
     <string name="avatar_on_board_2">Select your preferences to customise your character and shopping your experience at IPC!</string>
     <string name="let_do_it">Let\'s do it!</string>
@@ -55,24 +55,24 @@
     <string name="avatar_on_board_8">Now let\'s go experience the IPC app!</string>
     <string name="go_to_home">Go to Home</string>
     <string name="share_my_avatar">Share my avatar</string>
-<!--    home page-->
+    <!--    home page-->
     <string name="what_new">What\'s new</string>
     <string name="home_page_1">Exclusive rewards for Tack Club member</string>
     <string name="home_page_2">Exclusive e-voucher</string>
     <string name="home_page_3">Exclusive rewards for you</string>
     <string name="home_page_4">Redeem your points</string>
-<!--Profile-->
+    <!--Profile-->
     <string name="profile">Profile</string>
     <string name="rbbc">RBBC</string>
     <string name="my_card">My Cards</string>
     <string name="my_badges">My badges</string>
     <string name="view_all_my_badges">View all my badges</string>
-<!--Tack Club Perks-->
+    <!--Tack Club Perks-->
     <string name="tack_club_perks">Tack Club Perks</string>
     <string name="exclusive_for_you">Exclusive for you</string>
     <string name="show_this_to_the_cashier">Show this to the cashier to redeem the reward.</string>
     <string name="redemption_successful">Redemption successful!</string>
-<!--Rewards    -->
+    <!--Rewards    -->
     <string name="catalogue">Catalogue</string>
     <string name="my_rewards">My Rewards</string>
     <string name="get_started">Get Started</string>
