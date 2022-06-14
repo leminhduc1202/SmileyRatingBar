@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ipcupdate.SplashScreenIPC">
+    tools:context=".ipcupdate.SplashScreenIPC"
+    android:background="@color/white">
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpSlider"
         android:layout_width="match_parent"
@@ -23,7 +24,6 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:visibility="gone"
             android:id="@+id/tvBack"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -31,6 +31,7 @@
             android:gravity="center"
             android:text="@string/back"
             android:textColor="@color/hollywood_cerise"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintWidth_percent="0.2" />
@@ -44,6 +45,7 @@
             android:gravity="center"
             android:text="@string/next"
             android:textColor="@color/hollywood_cerise"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintWidth_percent="0.2" />
@@ -54,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:indicatorCount="2"
+        app:indicatorCount="5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/ctBottom"

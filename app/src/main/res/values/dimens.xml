@@ -122,6 +122,7 @@
     <dimen name="sp_51">51sp</dimen>
     <dimen name="sp_24">24sp</dimen>
     <dimen name="dp_33">33dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
     <dimen name="dp_36">36dp</dimen>
     <dimen name="dp_80">80dp</dimen>
     <dimen name="sp_6">6sp</dimen>
@@ -136,5 +137,7 @@
     <dimen name="dimen_24_negative">-24dp</dimen>
     <dimen name="sp_21">21sp</dimen>
     <dimen name="dp_106">106dp</dimen>
+    <dimen name="sp60">60sp</dimen>
+    <dimen name="sp40">40sp</dimen>
 
 </resources>
