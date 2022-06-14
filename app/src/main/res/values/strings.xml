@@ -76,5 +76,33 @@
     <string name="catalogue">Catalogue</string>
     <string name="my_rewards">My Rewards</string>
     <string name="get_started">Get Started</string>
-
+    <!--    Interest tag-->
+    <string-array name="text_tag">
+        <item>F&amp;B</item>
+        <item>Fashion</item>
+        <item>Beauty</item>
+        <item>Fitness</item>
+        <item>Sports</item>
+        <item>Pets</item>
+        <item>Parenting</item>
+        <item>Children</item>
+        <item>Education</item>
+        <item>Home &amp; Living</item>
+        <item>IT</item>
+        <item>Grocery</item>
+        <item>Cooking</item>
+    </string-array>
+    <string name="f_b">F&amp;B</string>
+    <string name="fashion">Fashion</string>
+    <string name="beauty">Beauty</string>
+    <string name="fitness">Fitness</string>
+    <string name="sports">Sports</string>
+    <string name="pets">Pets</string>
+    <string name="parenting">Parenting</string>
+    <string name="children">Children</string>
+    <string name="education">Education</string>
+    <string name="home_living">Home &amp; Living</string>
+    <string name="it">IT</string>
+    <string name="grocery">Grocery</string>
+    <string name="cooking">Cooking</string>
 </resources>
