@@ -1,8 +1,13 @@
 package com.mdapp.smileyrating.ipcupdate
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.view.Window
+import android.view.WindowInsets
+import android.view.WindowManager
+import android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
@@ -21,8 +26,18 @@ class SplashScreenIPC : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivitySplashScreenIpcBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        @Suppress("DEPRECATION")
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.insetsController?.hide(WindowInsets.Type.statusBars())
+        }else{
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+            )
+        }
 
         setViewPager()
         registerListeners()
@@ -49,10 +64,14 @@ class SplashScreenIPC : AppCompatActivity() {
                 if (position == 0){
                     binding.tvBack.visibility = View.GONE
                     binding.tvNext.text = getString(R.string.next)
+                    binding.tvNext.visibility = View.VISIBLE
+
                 }
                 if (position in 1 until fragmentList.lastIndex) {
                     binding.tvBack.visibility = View.VISIBLE
                     binding.tvNext.text = getString(R.string.next)
+                    binding.tvNext.visibility = View.VISIBLE
+
                 }
                 if (position == fragmentList.lastIndex){
                     binding.tvNext.visibility = View.GONE
@@ -85,4 +104,6 @@ class SplashScreenIPC : AppCompatActivity() {
             }
         }
     }
+
 }
+
