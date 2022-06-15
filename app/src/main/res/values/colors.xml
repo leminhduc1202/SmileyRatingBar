@@ -105,5 +105,6 @@
     <color name="rbbc_pie_chart_no_data">#E0E0E0</color>
     <color name="nps_pink">#FEC4EA</color>
     <color name="text_color_welcome">#8E98A2</color>
+    <color name="text_color">#3C3C3C</color>
 
 </resources>

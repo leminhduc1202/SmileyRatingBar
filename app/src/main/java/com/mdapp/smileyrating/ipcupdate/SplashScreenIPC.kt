@@ -4,20 +4,16 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.view.Window
 import android.view.WindowInsets
 import android.view.WindowManager
-import android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.MainActivity
 import com.mdapp.smileyrating.R
-import com.mdapp.smileyrating.SmileyFragment
 import com.mdapp.smileyrating.databinding.ActivitySplashScreenIpcBinding
-import com.mdapp.smileyrating.ipcupdate.slider.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.slideradapter.IntroSilderAdapter
 import com.mdapp.smileyrating.ipcupdate.splashscreen.*
-import com.mdapp.smileyrating.screen.NpsFragment
 
 class SplashScreenIPC : AppCompatActivity() {
 

@@ -13,6 +13,9 @@
             android:name=".ipcupdate.signup.SignUpActivity"
             android:exported="false" />
         <activity
+            android:name=".ipcupdate.avataronboard.AvatarOnBoardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

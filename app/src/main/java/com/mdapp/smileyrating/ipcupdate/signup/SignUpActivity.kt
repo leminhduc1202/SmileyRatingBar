@@ -1,6 +1,5 @@
 package com.mdapp.smileyrating.ipcupdate.signup
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,7 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivitySignUpBinding
 import com.mdapp.smileyrating.ipcupdate.SplashScreenIPC
-import com.mdapp.smileyrating.ipcupdate.slider.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.slideradapter.IntroSilderAdapter
 
 class SignUpActivity : AppCompatActivity() {
 
