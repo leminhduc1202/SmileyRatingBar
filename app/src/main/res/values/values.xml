@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.MaterialComponents.ChipEdit.Choice" parent="Base.Widget.MaterialComponents.Chip">
+        <item name="android:checkable">true</item>
+
+        <item name="chipIconVisible">false</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="closeIconVisible">false</item>
+
+        <item name="android:textColor">@drawable/text_color_chip_choice</item>
+
+        <item name="chipBackgroundColor">@color/background_color_chip_choice</item>
+        <item name="rippleColor">@color/text_color_welcome</item>
+
+    </style>
+</resources>
