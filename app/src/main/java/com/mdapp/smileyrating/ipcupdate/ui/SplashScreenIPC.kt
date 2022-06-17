@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate
+package com.mdapp.smileyrating.ipcupdate.ui
 
 import android.content.Intent
 import android.os.Build
@@ -12,8 +12,8 @@ import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.MainActivity
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivitySplashScreenIpcBinding
-import com.mdapp.smileyrating.ipcupdate.slideradapter.IntroSilderAdapter
-import com.mdapp.smileyrating.ipcupdate.splashscreen.*
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.splashscreen.*
 
 class SplashScreenIPC : AppCompatActivity() {
 
@@ -40,13 +40,16 @@ class SplashScreenIPC : AppCompatActivity() {
 
     }
 
-    private fun setViewPager(){
+    private fun setViewPager() {
         val adapter = IntroSilderAdapter(this)
         binding.vpSlider.adapter = adapter
 
-        fragmentList.addAll(listOf(WelcomeSlider1(), WelcomeSlider2(),
-            WelcomeSlider3(), WelcomeSlider4(), WelcomeSlider5()
-        ))
+        fragmentList.addAll(
+            listOf(
+                WelcomeSlider1(), WelcomeSlider2(),
+                WelcomeSlider3(), WelcomeSlider4(), WelcomeSlider5()
+            )
+        )
         adapter.setFragmentList(fragmentList)
 
         binding.indicatorLayout.setIndicatorCount(adapter.itemCount)

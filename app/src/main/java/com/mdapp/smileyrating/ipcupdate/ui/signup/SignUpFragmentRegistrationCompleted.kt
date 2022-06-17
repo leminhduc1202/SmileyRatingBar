@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate.signup
+package com.mdapp.smileyrating.ipcupdate.ui.signup
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.mdapp.smileyrating.databinding.FragmentWelcome1Binding
 import com.mdapp.smileyrating.databinding.FrgamentChoseInterestBinding
 import com.mdapp.smileyrating.databinding.FrgamentRegistrationCompletedBinding
-import com.mdapp.smileyrating.ipcupdate.avataronboard.AvatarOnBoardActivity
+import com.mdapp.smileyrating.ipcupdate.ui.avataronboard.AvatarOnBoardActivity
 
 class SignUpFragmentRegistrationCompleted: Fragment() {
 

@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate.signup
+package com.mdapp.smileyrating.ipcupdate.ui.signup
 
 import android.content.res.ColorStateList
 import android.graphics.Typeface

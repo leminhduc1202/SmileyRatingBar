@@ -7,7 +7,7 @@ import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mdapp.smileyrating.databinding.ActivityMainBinding
-import com.mdapp.smileyrating.ipcupdate.SplashScreenIPC
+import com.mdapp.smileyrating.ipcupdate.ui.SplashScreenIPC
 import com.mdapp.smileyrating.screen.NpsFragment
 
 

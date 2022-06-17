@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate.avataronboard
+package com.mdapp.smileyrating.ipcupdate.ui.avataronboard
 
 import android.os.Bundle
 import android.view.View
@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivityAvatarOnBoardBinding
-import com.mdapp.smileyrating.ipcupdate.signup.SignUpFragmentChoseInterest
-import com.mdapp.smileyrating.ipcupdate.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.signup.SignUpFragmentChoseInterest
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
 
 class AvatarOnBoardActivity : AppCompatActivity() {
 

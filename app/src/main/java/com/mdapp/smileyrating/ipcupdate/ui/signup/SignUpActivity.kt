@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate.signup
+package com.mdapp.smileyrating.ipcupdate.ui.signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivitySignUpBinding
-import com.mdapp.smileyrating.ipcupdate.SplashScreenIPC
-import com.mdapp.smileyrating.ipcupdate.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.SplashScreenIPC
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -34,7 +34,10 @@ class SignUpActivity : AppCompatActivity() {
         val adapter = IntroSilderAdapter(this)
         binding.vpSlider.adapter = adapter
 
-        fragmentList.addAll(listOf(SignUpFragment(),SignUpFragmentChoseInterest(), SignUpFragmentRegistrationCompleted()))
+        fragmentList.addAll(listOf(
+            SignUpFragment(),
+            SignUpFragmentChoseInterest(), SignUpFragmentRegistrationCompleted()
+        ))
         adapter.setFragmentList(fragmentList)
 
     }

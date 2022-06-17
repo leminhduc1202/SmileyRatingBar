@@ -10,16 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smileyrating">
         <activity
-            android:name=".ipcupdate.signup.SignUpActivity"
+            android:name=".ipcupdate.ui.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ipcupdate.avataronboard.AvatarOnBoardActivity"
+            android:name=".ipcupdate.ui.avataronboard.AvatarOnBoardActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ipcupdate.SplashScreenIPC"
+            android:name=".ipcupdate.ui.homepage.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ipcupdate.ui.SplashScreenIPC"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

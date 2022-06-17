@@ -1,29 +1,33 @@
-package com.mdapp.smileyrating.ipcupdate.signup
+package com.mdapp.smileyrating.ipcupdate.ui.avataronboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.mdapp.smileyrating.databinding.FragmentSignUpBinding
-import com.mdapp.smileyrating.databinding.FragmentWelcome1Binding
-import com.mdapp.smileyrating.databinding.FrgamentChoseInterestBinding
+import com.mdapp.smileyrating.databinding.FragmentAvatar1Binding
+import com.mdapp.smileyrating.databinding.FragmentAvatar2Binding
 
-class SignUpFragment: Fragment() {
+class AvatarOnBoard2Fragment: Fragment() {
 
-    private lateinit var binding: FragmentSignUpBinding
+    private lateinit var binding: FragmentAvatar2Binding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSignUpBinding.inflate(layoutInflater)
+        binding = FragmentAvatar2Binding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        initView()
+    }
+
+    private fun initView() {
 
     }
 }

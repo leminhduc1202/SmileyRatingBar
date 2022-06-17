@@ -14,4 +14,38 @@
         <item name="colorControlActivated">@color/rating_active</item>
     </style>
 
+    <style name="ViewLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/silver</item>
+    </style>
+
+    <style name="TextViewNavigationBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/silver</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAppearance">@style/FontLight</item>
+        <item name="android:textSize">@dimen/tv_size_11sp</item>
+    </style>
+
+    <style name="FontLight" parent="android:TextAppearance">
+        <item name="fontFamily">@font/ikanosans_light</item>
+    </style>
+
+    <style name="TvNotificationNavigationBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">-7dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/bg_number_notification</item>
+        <item name="android:textAppearance">@style/FontLight</item>
+        <item name="android:textSize">@dimen/tv_size_8sp</item>
+    </style>
+
 </resources>

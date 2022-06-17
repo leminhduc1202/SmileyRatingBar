@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate.slideradapter
+package com.mdapp.smileyrating.ipcupdate.ui.slideradapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

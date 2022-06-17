@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating.ipcupdate.splashscreen
+package com.mdapp.smileyrating.ipcupdate.ui.splashscreen
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.mdapp.smileyrating.MainActivity
 import com.mdapp.smileyrating.databinding.FragmentWelcome1Binding
 import com.mdapp.smileyrating.databinding.FragmentWelcome5Binding
-import com.mdapp.smileyrating.ipcupdate.signup.SignUpActivity
+import com.mdapp.smileyrating.ipcupdate.ui.signup.SignUpActivity
 
 class WelcomeSlider5: Fragment() {
 
