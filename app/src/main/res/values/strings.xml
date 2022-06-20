@@ -115,4 +115,17 @@
     <string name="navigation_notifications">Notifications</string>
     <string name="navigation_profile">Profile</string>
 
+    <string name="home_tv_title">Good %1$s!</string>
+    <string name="home_tv_login_or_signup">Log in or Sign up</string>
+    <string name="home_tv_point">%1$s pts</string>
+    <string name="wifi">Wifi</string>
+    <string name="e_vouchers">E-vouchers</string>
+    <string name="events">Events</string>
+    <string name="exclusive_for_tack_club">Exclusive rewards for your Tack Club member</string>
+    <string name="exclusive_e_voucher">Exclusive e-voucher</string>
+
+
+
+
+
 </resources>

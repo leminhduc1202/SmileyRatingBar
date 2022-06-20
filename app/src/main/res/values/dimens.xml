@@ -128,6 +128,7 @@
     <dimen name="sp_6">6sp</dimen>
     <dimen name="sp_8">8sp</dimen>
     <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
     <dimen name="dp_300">300dp</dimen>
     <dimen name="dp_129">129dp</dimen>
     <dimen name="dp_133">133dp</dimen>
