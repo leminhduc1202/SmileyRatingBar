@@ -24,6 +24,14 @@
     <string name="splash_screen_2">Member-exclusive event &amp; promos</string>
     <string name="splash_screen_3">Special perks for your little ones with Sma Club</string>
     <string name="splash_screen_4">Sign up to be our Tack Club member today!</string>
+    <string name="splash_screen_5">First things first,</string>
+    <string name="splash_screen_6">Register with your mobile number. This will be used as your log in.</string>
+    <string name="splash_screen_7">Enter OTP</string>
+    <string name="splash_screen_8">A 6 digit OTP that was sent to +60123456789</string>
+    <string name="splash_screen_9">Didni\'t receive it? Try again in 0:59</string>
+    <string name="splash_screen_10">You will now be directed to set up your account details</string>
+    <string name="splash_screen_11">This is your avatar, customise it and it will represent you &amp; your interests to elevate your experience on the IPC app!</string>
+
     <string name="sign_up">Sign up</string>
     <string name="log_in">Login</string>
     <string name="maybe_later">Maybe later</string>
@@ -123,9 +131,9 @@
     <string name="events">Events</string>
     <string name="exclusive_for_tack_club">Exclusive rewards for your Tack Club member</string>
     <string name="exclusive_e_voucher">Exclusive e-voucher</string>
-
-
-
+    <string name="mobile_number">+06 0123456798</string>
+    <string name="an_otp_will_be_sent_to_you">An OTP will be sent to you</string>
+    <string name="lets_go">Let\'s go</string>
 
 
 </resources>

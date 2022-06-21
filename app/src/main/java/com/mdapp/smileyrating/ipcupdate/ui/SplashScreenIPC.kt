@@ -47,12 +47,13 @@ class SplashScreenIPC : AppCompatActivity() {
         fragmentList.addAll(
             listOf(
                 WelcomeSlider1(), WelcomeSlider2(),
-                WelcomeSlider3(), WelcomeSlider4(), WelcomeSlider5()
+                WelcomeSlider3(), WelcomeSlider4(),
+                WelcomeSlider5(), WelcomeSlider6(),
+                WelcomeSlider7(), WelcomeSlider8()
             )
         )
         adapter.setFragmentList(fragmentList)
-
-        binding.indicatorLayout.setIndicatorCount(adapter.itemCount)
+        binding.indicatorLayout.setIndicatorCount(adapter.itemCount - 3)
         binding.indicatorLayout.selectCurrentPosition(0)
     }
 
@@ -64,15 +65,41 @@ class SplashScreenIPC : AppCompatActivity() {
                     binding.tvBack.visibility = View.GONE
                     binding.tvNext.text = getString(R.string.next)
                     binding.tvNext.visibility = View.VISIBLE
+                    binding.tvWhyAsk.visibility = View.GONE
+                    binding.indicatorLayout.visibility = View.VISIBLE
 
                 }
-                if (position in 1 until fragmentList.lastIndex) {
+                if (position in 1 ..3) {
                     binding.tvBack.visibility = View.VISIBLE
                     binding.tvNext.text = getString(R.string.next)
                     binding.tvNext.visibility = View.VISIBLE
+                    binding.tvWhyAsk.visibility = View.GONE
+                    binding.indicatorLayout.visibility = View.VISIBLE
 
                 }
-                if (position == fragmentList.lastIndex){
+                if (position == 4){
+                    binding.tvBack.visibility = View.VISIBLE
+                    binding.tvNext.visibility = View.GONE
+                    binding.tvWhyAsk.visibility = View.GONE
+                    binding.indicatorLayout.visibility = View.VISIBLE
+
+                }
+                if (position == 5){
+                    binding.tvWhyAsk.visibility =View.VISIBLE
+                    binding.tvNext.visibility = View.VISIBLE
+                    binding.indicatorLayout.visibility = View.GONE
+                    binding.tvBack.visibility = View.GONE
+
+                }
+                if (position == fragmentList.lastIndex - 1){
+                    binding.tvBack.visibility = View.VISIBLE
+                    binding.tvWhyAsk.visibility = View.VISIBLE
+                    binding.indicatorLayout.visibility = View.GONE
+                }
+                if (position == fragmentList.lastIndex ){
+                    binding.tvBack.visibility = View.GONE
+                    binding.tvWhyAsk.visibility = View.GONE
+                    binding.indicatorLayout.visibility = View.GONE
                     binding.tvNext.visibility = View.GONE
                 }
 

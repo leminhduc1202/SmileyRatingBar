@@ -28,7 +28,7 @@
         android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_percent="0.09">
+        app:layout_constraintHeight_percent="0.07">
 
         <RelativeLayout
             android:id="@+id/tabHome"
@@ -48,6 +48,7 @@
 
             <TextView
                 android:id="@+id/tvHome"
+                android:layout_below="@id/imgHome"
                 style="@style/TextViewNavigationBar"
                 android:text="@string/navigation_home" />
 
@@ -72,6 +73,7 @@
 
             <TextView
                 android:id="@+id/tvDiscover"
+                android:layout_below="@id/imgDiscover"
                 style="@style/TextViewNavigationBar"
                 android:text="@string/navigation_discover" />
 
@@ -96,6 +98,7 @@
 
             <TextView
                 android:id="@+id/tvFacilities"
+                android:layout_below="@id/imgFacilities"
                 style="@style/TextViewNavigationBar"
                 android:text="@string/navigation_facilities" />
 
@@ -118,14 +121,8 @@
                 android:src="@drawable/bg_rewards_selector" />
 
             <TextView
-
-                android:id="@+id/tvNotificationNotifi"
-                style="@style/TvNotificationNavigationBar"
-                android:layout_toRightOf="@id/imgRewards"
-                android:visibility="gone" />
-
-            <TextView
                 android:id="@+id/tvRewards"
+                android:layout_below="@id/imgRewards"
                 style="@style/TextViewNavigationBar"
                 android:layout_centerInParent="true"
                 android:text="@string/navigation_rewards" />
@@ -150,9 +147,9 @@
 
             <TextView
                 android:id="@+id/tvProfile"
+                android:layout_below="@id/imgProfile"
                 style="@style/TextViewNavigationBar"
                 android:text="@string/navigation_profile" />
-
 
             <View
                 android:id="@+id/viewDotProfile"
