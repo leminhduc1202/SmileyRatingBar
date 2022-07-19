@@ -2,6 +2,7 @@ package com.mdapp.smileyrating.screen
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,15 +31,18 @@ class NpsFragment : Fragment() {
     }
 
     private fun handleEvent() {
-        binding.animationView.progress = 1f
+        binding.animationView.progress = 0f
         binding.tvRating.text =  getString(R.string.highly_likely)
-        binding.sbProgress.progress = 110
+        binding.sbProgress.max = 100
+        binding.sbProgress.progress = 100
 
         var seekBarProgress = 0
         binding.sbProgress.setOnSeekBarChangeListener(@SuppressLint("AppCompatCustomView")
         object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
                 binding.animationView.progress = (p1.toFloat() /100)
+                Log.d("=====p1", (p1.toFloat() / 100).toString())
+                Log.d("aaa", binding.animationView.frame.toString())
                 seekBarProgress = p1
             }
 
@@ -48,27 +52,37 @@ class NpsFragment : Fragment() {
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
                 when (seekBarProgress){
-
-                    in 80..120 -> let {
-                        p0?.progress = 110
+                    in 76..100 -> let {
+                        p0?.progress = 100
                         binding.tvRating.text = getString(R.string.highly_likely)
+
+
                     }
-                    in 60..79 -> let {
-                        p0?.progress = 80
+                    in 51..75 -> let {
+                        p0?.progress = 75
                         binding.tvRating.text = getString(R.string.likely)
+
+
                     }
-                    in 40..59 -> let {
-                        p0?.progress = 60
-                        binding.tvRating.text = getString(R.string.neutral)
+                    in 26..50 -> let {
+                        p0?.progress = 50
+                        binding.tvRating.text = getString(R.string.likely)
+
+
                     }
-                    in 10..39 -> let {
-                        p0?.progress = 40
+                    in 1..25 -> let {
+                        p0?.progress = 25
+                        binding.tvRating.text = getString(R.string.less_likely)
+
+
+                    }
+                    0 -> {
+                        p0?.progress = 0
                         binding.tvRating.text = getString(R.string.highly_unlikely)
+
+
                     }
-                    in 0..9 ->let{
-                        p0?.progress = 10
-                        binding.tvRating.text = getString(R.string.never)
-                    }
+
                 }
             }
         })

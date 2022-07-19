@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     in 40..59 -> let {
                         p0?.progress = 60
-                        binding.tvRating.text = getString(R.string.neutral)
+                        binding.tvRating.text = getString(R.string.less_likely)
                     }
                     in 20..39 -> let {
                         p0?.progress = 40
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
-//animation SeekBar and lottie
+
 
         binding.tvShowDialog.setOnClickListener{
             val fragment = supportFragmentManager.beginTransaction()
@@ -103,8 +103,251 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+//        showRating()
+        showRatingTest()
 
     }
+
+    private fun showRatingTest() {
+        binding.animationViewNPSTest.progress = 0f
+        binding.tvRatingNPS.text = getString(R.string.highly_likely)
+        binding.sbProgressNPS.max = 100
+        binding.sbProgressNPS.progress = 100
+
+        var progressSeekBar = 0
+        binding.sbProgressNPS.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener{
+                override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                    binding.animationViewNPSTest.progress = (1 - p1.toFloat() / 100)
+                    Log.e("abc", binding.animationViewNPSTest.frame.toString())
+                    Log.e("def", binding.animationViewNPSTest.progress.toString())
+                    progressSeekBar = p1
+
+                    when (progressSeekBar) {
+                        0 -> let {
+
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        10 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        20 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        30 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        40 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        50 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        60 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        70 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        80 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        90 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        100 -> let {
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                    }
+                }
+
+                override fun onStartTrackingTouch(p0: SeekBar?) {
+//                    TODO("Not yet implemented")
+                }
+
+                override fun onStopTrackingTouch(p0: SeekBar?) {
+                    when (progressSeekBar) {
+                        0 -> let {
+                            p0?.progress = 0
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        10 -> let {
+                            p0?.progress = 10
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        20 -> let {
+                            p0?.progress = 20
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        30 -> let {
+                            p0?.progress = 30
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        40 -> let {
+                            p0?.progress = 40
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        50 -> let {
+                            p0?.progress = 50
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        60 -> let {
+                            p0?.progress = 60
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        70 -> let {
+                            p0?.progress = 70
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        80 -> let {
+                            p0?.progress = 80
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        90 -> let {
+                            p0?.progress = 90
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        100 -> let {
+                            p0?.progress = 100
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                    }
+                }
+            }
+        )
+
+    }
+
+    private fun showRating() {
+        binding.animationViewNPS.progress = 0f
+        binding.tvRatingNPS.text = getString(R.string.highly_likely)
+        binding.sbProgressNPS.progress = 100
+        binding.sbProgressNPS.max = 100
+
+        var sbProgressNPS = 0
+        binding.sbProgressNPS.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener {
+                override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                    binding.animationViewNPS.progress = (p1.toFloat() / 100)
+//                    if (p1.toFloat() / 100 > 0.5) {
+//                        binding.animationViewNPS.visibility = View.GONE
+//                        binding.animationViewNPSFinal.apply {
+//                            visibility = View.VISIBLE
+//                            this.progress = (1 - p1.toFloat() / 100).toFloat()
+//                        }
+//                    } else {
+//                        binding.animationViewNPSFinal.visibility = View.GONE
+//                        binding.animationViewNPS.apply {
+//                            visibility = View.VISIBLE
+//                            this.progress = (0.5 - p1.toFloat() / 100).toFloat()
+//                        }
+//                    }
+                    sbProgressNPS = p1
+                    when (sbProgressNPS) {
+                        0 -> let {
+                            p0?.progress = 0
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        10 -> let {
+                            p0?.progress = 10
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        20 -> let {
+                            p0?.progress = 20
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        30 -> let {
+                            p0?.progress = 30
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        40 -> let {
+                            p0?.progress = 40
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        50 -> let {
+                            p0?.progress = 50
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        60 -> let {
+                            p0?.progress = 60
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        70 -> let {
+                            p0?.progress = 70
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        80 -> let {
+                            p0?.progress = 80
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        90 -> let {
+                            p0?.progress = 90
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        100 -> let {
+                            p0?.progress = 100
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                    }
+                }
+
+                override fun onStartTrackingTouch(p0: SeekBar?) {
+//                    TODO("Not yet implemented")
+                }
+
+                override fun onStopTrackingTouch(p0: SeekBar?) {
+                    when (sbProgressNPS) {
+                        0 -> let {
+                            p0?.progress = 0
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        10 -> let {
+                            p0?.progress = 10
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        20 -> let {
+                            p0?.progress = 20
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        30 -> let {
+                            p0?.progress = 30
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        40 -> let {
+                            p0?.progress = 40
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        50 -> let {
+                            p0?.progress = 50
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        60 -> let {
+                            p0?.progress = 60
+                            binding.tvRatingNPS.text = getString(R.string.less_likely)
+                        }
+                        70 -> let {
+                            p0?.progress = 70
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        80 -> let {
+                            p0?.progress = 80
+                            binding.tvRatingNPS.text = getString(R.string.likely)
+                        }
+                        90 -> let {
+                            p0?.progress = 90
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                        100 -> let {
+                            p0?.progress = 100
+                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
+                        }
+                    }
+                }
+
+            }
+        )
+    }
+
     private fun onShowDialog() {
         binding.tvShowDialog.setTextColor(ContextCompat.getColor(baseContext, R.color.white))
         binding.tvShowDialog.background =

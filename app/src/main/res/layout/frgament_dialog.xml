@@ -79,7 +79,6 @@
                 android:progress="60"
                 android:max="120"
                 android:splitTrack="false"
-                android:progressBackgroundTint="@color/white"
                 android:progressDrawable="@drawable/seekbar_progress"
                 android:thumb="@drawable/seekbar_thumb"
                 android:layout_width="match_parent"
@@ -153,7 +152,7 @@
                 app:layout_constraintWidth_percent="0.4"
                 app:lottie_autoPlay="false"
                 app:lottie_loop="false"
-                app:lottie_rawRes="@raw/lottie_02"
+                app:lottie_rawRes="@raw/nps_final"
                 app:lottie_url="REPLACE_JSON_URL" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

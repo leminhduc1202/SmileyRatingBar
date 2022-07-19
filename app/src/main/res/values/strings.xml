@@ -8,7 +8,7 @@
     <string name="highly_likely">Highly Likely</string>
     <string name="highly_unlikely">Highly Unlikely</string>
     <string name="likely">Likely</string>
-    <string name="neutral">Neutral</string>
+    <string name="less_likely">Less Likely</string>
     <string name="never">Never</string>
     <string name="back">Back</string>
     <string name="feedback_content">Success! Thank you for submitting your feedback!</string>

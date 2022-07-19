@@ -5,9 +5,9 @@
             <size android:height="@dimen/dimen_10dp"/>
             <corners
                 android:radius="@dimen/dimen_10dp" />
-            <stroke android:color="@color/cobalt"
+            <stroke android:color="@color/rbbc_pie_chart_no_data"
                 android:width="@dimen/dp_4"/>
-            <solid android:color="@color/white"/>
+            <solid android:color="@color/rbbc_pie_chart_no_data"/>
         </shape>
     </item>
 </layer-list>
