@@ -123,8 +123,6 @@
 
             <SeekBar
                 android:id="@+id/sbProgressNPS"
-                android:progress="60"
-                android:max="120"
                 android:splitTrack="false"
                 android:progressDrawable="@drawable/seekbar_progress"
                 android:thumb="@drawable/seekbar_thumb"
@@ -213,9 +211,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:srcCompat="@drawable/ic_logo"
-                    app:lottie_autoPlay="false"
-                    app:lottie_loop="false"
-                    app:lottie_rawRes="@raw/smile"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/nps_file"
                     app:lottie_url="REPLACE_JSON_URL" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
