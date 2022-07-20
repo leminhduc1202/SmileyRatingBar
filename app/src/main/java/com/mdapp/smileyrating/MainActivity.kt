@@ -24,13 +24,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-//        binding.ratingBar.setOnRatingBarChangeListener { _, rating, _ ->
-//            binding.smileyView.setSmiley(rating = rating)
-//        }
-//animation text run left to right
-//        binding.textRun.startAnimation(AnimationUtils.loadAnimation(this, translate))
-
-
         binding.tvShowDialog.setOnClickListener{
             val fragment = supportFragmentManager.beginTransaction()
             fragment.replace(R.id.ctMiddle, NpsFragment())
@@ -55,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-//animation SeekBar and lottie
+    //animation SeekBar and lottie
     private fun showRatingTest() {
         binding.apply {
             sbProgressNPS.progress = 100
@@ -138,7 +131,7 @@ class MainActivity : AppCompatActivity() {
                 }
             })
             btnSubmit.setOnClickListener {
-                Toast.makeText(this@MainActivity,(binding.animationViewNPSTest.progress * 10).toInt().toString(), Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity,((binding.sbProgressNPS.progress)/10).toString(), Toast.LENGTH_LONG).show()
             }
         }
     }
