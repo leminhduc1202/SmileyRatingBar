@@ -135,5 +135,11 @@
     <string name="an_otp_will_be_sent_to_you">An OTP will be sent to you</string>
     <string name="lets_go">Let\'s go</string>
 
+    <string name="tack_point_12_month_validity">Our Tack Points have a 12 months validity from the day your membership starts and renews on the same date. Be sure to redeem your points before they expire!</string>
+    <string name="home.tv_learn_more">Learn More</string>
+    <string name="about_tack_club">About Tack Club</string>
+
+
+
 
 </resources>

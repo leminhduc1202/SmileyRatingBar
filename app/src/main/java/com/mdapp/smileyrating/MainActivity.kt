@@ -124,38 +124,16 @@ class MainActivity : AppCompatActivity() {
                     progressSeekBar = p1
 
                     when (progressSeekBar) {
-                        0 -> let {
-
+                        in 0..30 -> let {
                             binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
                         }
-                        10 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
-                        }
-                        20 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
-                        }
-                        30 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
-                        }
-                        40 -> let {
+                        in 31..60 -> let {
                             binding.tvRatingNPS.text = getString(R.string.less_likely)
                         }
-                        50 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.less_likely)
-                        }
-                        60 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.less_likely)
-                        }
-                        70 -> let {
+                        in 61..80 -> let {
                             binding.tvRatingNPS.text = getString(R.string.likely)
                         }
-                        80 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.likely)
-                        }
-                        90 -> let {
-                            binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
-                        }
-                        100 -> let {
+                        in 81..100 -> let {
                             binding.tvRatingNPS.text = getString(R.string.highly_unlikely)
                         }
                     }
