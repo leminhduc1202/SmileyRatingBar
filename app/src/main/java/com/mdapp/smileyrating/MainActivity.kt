@@ -114,20 +114,20 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onStopTrackingTouch(p0: SeekBar?) {
-                    p0?.progress = when(p0?.progress){
-                        in 0..4 -> 0
-                        in 5..14 -> 10
-                        in 15..24 -> 20
-                        in 25..34 -> 30
-                        in 35..44 -> 40
-                        in 45..54 -> 50
-                        in 55..64 -> 60
-                        in 65..74 -> 70
-                        in 75..84 -> 80
-                        in 85..94 -> 90
-                        else -> 100
-                    }
-                    Log.e("p0", p0?.progress.toString())
+//                    p0?.progress = when(p0?.progress){
+//                        in 0..4 -> 0
+//                        in 5..14 -> 10
+//                        in 15..24 -> 20
+//                        in 25..34 -> 30
+//                        in 35..44 -> 40
+//                        in 45..54 -> 50
+//                        in 55..64 -> 60
+//                        in 65..74 -> 70
+//                        in 75..84 -> 80
+//                        in 85..94 -> 90
+//                        else -> 100
+//                    }
+//                    Log.e("p0", p0?.progress.toString())
                 }
             })
             btnSubmit.setOnClickListener {
