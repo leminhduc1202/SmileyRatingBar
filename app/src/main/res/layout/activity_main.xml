@@ -200,14 +200,14 @@
                     android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:srcCompat="@drawable/ic_logo"
                     app:lottie_autoPlay="false"
                     app:lottie_loop="false"
-                    app:lottie_rawRes="@raw/nps_final"
+                    app:lottie_rawRes="@raw/humans"
                     app:lottie_url="REPLACE_JSON_URL" />
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/animationViewNPSTest"
+                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:srcCompat="@drawable/ic_logo"

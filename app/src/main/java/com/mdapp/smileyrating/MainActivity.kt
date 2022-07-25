@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         showRatingTest()
+//        showHandleLottie()
 
     }
 
@@ -137,6 +138,29 @@ class MainActivity : AppCompatActivity() {
     }
     //animation SeekBar and lottie
 
+    private fun showHandleLottie(){
+        binding.apply {
+
+            sbProgressNPS.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
+
+                override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+//                    TODO("Not yet implemented")
+                    animationViewNPS.progress = (p1.toFloat()/100)
+                    Log.d("animationViewNPS", animationViewNPS.frame.toString())
+
+                }
+
+                override fun onStartTrackingTouch(p0: SeekBar?) {
+//                    TODO("Not yet implemented")
+                }
+
+                override fun onStopTrackingTouch(p0: SeekBar?) {
+//                    TODO("Not yet implemented")
+                }
+
+            })
+        }
+    }
 
     private fun onShowDialog() {
         binding.tvShowDialog.setTextColor(ContextCompat.getColor(baseContext, R.color.white))
