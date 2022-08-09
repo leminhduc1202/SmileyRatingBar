@@ -13,10 +13,10 @@
             android:name=".ipcupdate.ui.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ipcupdate.ui.avataronboard.AvatarOnBoardActivity"
+            android:name=".ipcupdate.ui.SplashScreenIPC"
             android:exported="false" />
         <activity
-            android:name=".ipcupdate.ui.SplashScreenIPC"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ipcupdate.ui.homepage.HomePageActivity"
@@ -25,7 +25,7 @@
             android:name=".ipctackclub.TackClubActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ipcupdate.ui.avataronboard.AvatarOnBoardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

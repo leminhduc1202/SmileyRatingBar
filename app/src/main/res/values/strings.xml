@@ -139,6 +139,18 @@
     <string name="home.tv_learn_more">Learn More</string>
     <string name="about_tack_club">About Tack Club</string>
 
+    <string-array name="text_customise">
+        <item>Shape</item>
+        <item>Colour</item>
+        <item>Expression</item>
+        <item>Something else</item>
+    </string-array>
+    <string name="shape">Shape</string>
+    <string name="colour">Colour</string>
+    <string name="expression">Expression</string>
+    <string name="something_else">Something else</string>
+
+
 
 
 
