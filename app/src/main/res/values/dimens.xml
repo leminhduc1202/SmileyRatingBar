@@ -141,5 +141,8 @@
     <dimen name="dp_106">106dp</dimen>
     <dimen name="sp60">60sp</dimen>
     <dimen name="sp40">40sp</dimen>
+    <dimen name="sp_50">50sp</dimen>
+    <dimen name="dp_310">310dp</dimen>
+
 
 </resources>

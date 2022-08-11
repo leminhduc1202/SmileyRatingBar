@@ -1,17 +1,15 @@
-package com.mdapp.smileyrating
+package com.mdapp.smileyrating.screen
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.airbnb.lottie.LottieAnimationView
+import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivityMainBinding
 import com.mdapp.smileyrating.ipcupdate.ui.SplashScreenIPC
-import com.mdapp.smileyrating.screen.NpsFragment
 
 
 class MainActivity : AppCompatActivity() {

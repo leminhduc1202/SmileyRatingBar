@@ -19,7 +19,7 @@
 
     <!--    IPC Update content-->
     <!--    Splash screen-->
-    <string name="well_come">Hej, welcome to IPC!</string>
+    <string name="well_come">Welcome to The IPC App</string>
     <string name="splash_screen_1">Collect points to redeem personalised rewards &amp; e-vouchers</string>
     <string name="splash_screen_2">Member-exclusive event &amp; promos</string>
     <string name="splash_screen_3">Special perks for your little ones with Sma Club</string>

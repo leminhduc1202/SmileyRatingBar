@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating
+package com.mdapp.smileyrating.screen
 
 class Main {
     companion object {

@@ -1,4 +1,4 @@
-package com.mdapp.smileyrating
+package com.mdapp.smileyrating.screen
 
 import android.os.Bundle
 import android.os.strictmode.WebViewMethodCalledOnWrongThreadViolation
