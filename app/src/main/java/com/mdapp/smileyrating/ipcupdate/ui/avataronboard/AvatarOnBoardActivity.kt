@@ -3,14 +3,11 @@ package com.mdapp.smileyrating.ipcupdate.ui.avataronboard
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivityAvatarOnBoardBinding
 import com.mdapp.smileyrating.ipcupdate.ui.signup.SignUpFragmentChoseInterest
-import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSliderAdapter
 
 class AvatarOnBoardActivity : AppCompatActivity() {
 
@@ -27,7 +24,7 @@ class AvatarOnBoardActivity : AppCompatActivity() {
     }
 
     private fun setViewPager() {
-        val adapter = IntroSilderAdapter(this)
+        val adapter = IntroSliderAdapter(this)
         binding.vpSlider.adapter = adapter
 
         fragmentList.addAll(

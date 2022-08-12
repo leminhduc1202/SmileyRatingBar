@@ -28,7 +28,7 @@
         android:layout_marginStart="@dimen/dp_30"
         android:layout_marginTop="@dimen/dp_30"
         android:fontFamily="@font/ikanosans_bold"
-        android:text="@string/splash_screen_6"
+        android:text="@string/sign_up_mobile_number"
         android:textColor="@color/text_color_welcome"
         android:textSize="@dimen/sp_21"
         app:layout_constraintEnd_toEndOf="parent"

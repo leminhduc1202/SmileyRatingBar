@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smileyrating">
         <activity
+            android:name=".ipc3.signup.SignUpScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ipcupdate.ui.SplashScreenIPC"
+            android:exported="false" />
+        <activity
             android:name=".ipcupdate.ui.avataronboard.AvatarOnBoardActivity"
             android:exported="false" />
         <activity
@@ -25,7 +31,7 @@
             android:name=".ipctackclub.TackClubActivity"
             android:exported="false" />
         <activity
-            android:name=".ipcupdate.ui.SplashScreenIPC"
+            android:name=".ipc3.splashscreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

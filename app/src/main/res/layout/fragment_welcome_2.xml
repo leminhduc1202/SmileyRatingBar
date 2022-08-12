@@ -3,20 +3,96 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+
     <TextView
-        android:id="@+id/tvWelcome"
+        android:id="@+id/tvSignUpTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/dp_30"
-        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginEnd="@dimen/dp_61"
+        android:layout_marginBottom="@dimen/dp_16"
         android:fontFamily="@font/ikanosans_bold"
-        android:text="@string/splash_screen_1"
-        android:textColor="@color/text_color_welcome"
+        android:text="@string/well_come"
+        android:textColor="@color/blue_main_color"
         android:textSize="@dimen/sp40"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/tvSignUpContent"/>
+
+    <TextView
+        android:id="@+id/tvSignUpContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginEnd="@dimen/dp_61"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        android:fontFamily="@font/ikanosans_bold"
+        android:text="@string/sign_up_mobile_number"
+        android:textColor="@color/blue_main_color"
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edtMobileNumber" />
+
+    <EditText
+        android:id="@+id/edtMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounder_card_view"
+        android:fontFamily="@font/ikanosans_light"
+        android:paddingStart="@dimen/dimen_32dp"
+        android:paddingVertical="@dimen/dp_16"
+        android:hint="@string/mobile_number"
+        android:textColorHint="@color/blue_main_color"
+        android:textColor="@color/blue_main_color"
+        android:textSize="@dimen/dimen_16sp"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_36"
+        app:layout_constraintBottom_toTopOf="@id/tvSignUpErrorMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:id="@+id/tvSignUpErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginEnd="@dimen/dp_61"
+        android:fontFamily="@font/ikanosans_light"
+        android:text="@string/sign_up_error_message"
+        android:textColor="@color/text_gray_color"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal" />
+
+    <ImageView
+        android:id="@+id/imgSignUpMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-60dp"
+        android:src="@drawable/ic_background_sign_up_mobile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

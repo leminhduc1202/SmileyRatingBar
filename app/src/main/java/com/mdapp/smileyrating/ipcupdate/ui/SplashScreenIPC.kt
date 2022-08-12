@@ -12,7 +12,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.screen.MainActivity
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivitySplashScreenIpcBinding
-import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSliderAdapter
 import com.mdapp.smileyrating.ipcupdate.ui.splashscreen.*
 
 class SplashScreenIPC : AppCompatActivity() {
@@ -41,7 +41,7 @@ class SplashScreenIPC : AppCompatActivity() {
     }
 
     private fun setViewPager() {
-        val adapter = IntroSilderAdapter(this)
+        val adapter = IntroSliderAdapter(this)
         binding.vpSlider.adapter = adapter
 
         fragmentList.addAll(

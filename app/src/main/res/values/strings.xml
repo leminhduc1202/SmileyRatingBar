@@ -25,7 +25,7 @@
     <string name="splash_screen_3">Special perks for your little ones with Sma Club</string>
     <string name="splash_screen_4">Sign up to be our Tack Club member today!</string>
     <string name="splash_screen_5">First things first,</string>
-    <string name="splash_screen_6">Register with your mobile number. This will be used as your log in.</string>
+    <string name="sign_up_mobile_number">Register with your mobile number. This will be used as your log in.</string>
     <string name="splash_screen_7">Enter OTP</string>
     <string name="splash_screen_8">A 6 digit OTP that was sent to +60123456789</string>
     <string name="splash_screen_9">Didni\'t receive it? Try again in 0:59</string>
@@ -98,6 +98,36 @@
     <string name="it">IT</string>
     <string name="grocery">Grocery</string>
     <string name="cooking">Cooking</string>
+    <string name="navigation_discover">Discover</string>
+
+    <string name="navigation_home">Home</string>
+    <string name="navigation_facilities">Facilities</string>
+    <string name="navigation_store_guide">Store  Guide</string>
+    <string name="navigation_parking">Parking</string>
+    <string name="navigation_rewards">Rewards</string>
+    <string name="navigation_notifications">Notifications</string>
+    <string name="navigation_profile">Profile</string>
+    <string name="home_tv_title">Good %1$s!</string>
+
+    <string name="home_tv_login_or_signup">Log in or Sign up</string>
+    <string name="home_tv_point">%1$s pts</string>
+    <string name="wifi">Wifi</string>
+    <string name="e_vouchers">E-vouchers</string>
+    <string name="events">Events</string>
+    <string name="exclusive_for_tack_club">Exclusive rewards for your Tack Club member</string>
+    <string name="exclusive_e_voucher">Exclusive e-voucher</string>
+    <string name="mobile_number"><b>+6</b> 0123456798</string>
+    <string name="an_otp_will_be_sent_to_you">An OTP will be sent to you</string>
+    <string name="lets_go">Let\'s go!</string>
+    <string name="tack_point_12_month_validity">Our Tack Points have a 12 months validity from the day your membership starts and renews on the same date. Be sure to redeem your points before they expire!</string>
+
+    <string name="home.tv_learn_more">Learn More</string>
+    <string name="about_tack_club">About Tack Club</string>
+    <string name="shape">Shape</string>
+
+    <string name="colour">Colour</string>
+    <string name="expression">Expression</string>
+    <string name="something_else">Something else</string>
     <string-array name="text_tag">
         <item>F&amp;B</item>
         <item>Fashion</item>
@@ -113,43 +143,18 @@
         <item>Grocery</item>
         <item>Cooking</item>
     </string-array>
-
-    <string name="navigation_discover">Discover</string>
-    <string name="navigation_home">Home</string>
-    <string name="navigation_facilities">Facilities</string>
-    <string name="navigation_store_guide">Store  Guide</string>
-    <string name="navigation_parking">Parking</string>
-    <string name="navigation_rewards">Rewards</string>
-    <string name="navigation_notifications">Notifications</string>
-    <string name="navigation_profile">Profile</string>
-
-    <string name="home_tv_title">Good %1$s!</string>
-    <string name="home_tv_login_or_signup">Log in or Sign up</string>
-    <string name="home_tv_point">%1$s pts</string>
-    <string name="wifi">Wifi</string>
-    <string name="e_vouchers">E-vouchers</string>
-    <string name="events">Events</string>
-    <string name="exclusive_for_tack_club">Exclusive rewards for your Tack Club member</string>
-    <string name="exclusive_e_voucher">Exclusive e-voucher</string>
-    <string name="mobile_number">+06 0123456798</string>
-    <string name="an_otp_will_be_sent_to_you">An OTP will be sent to you</string>
-    <string name="lets_go">Let\'s go</string>
-
-    <string name="tack_point_12_month_validity">Our Tack Points have a 12 months validity from the day your membership starts and renews on the same date. Be sure to redeem your points before they expire!</string>
-    <string name="home.tv_learn_more">Learn More</string>
-    <string name="about_tack_club">About Tack Club</string>
-
     <string-array name="text_customise">
         <item>Shape</item>
         <item>Colour</item>
         <item>Expression</item>
         <item>Something else</item>
     </string-array>
-    <string name="shape">Shape</string>
-    <string name="colour">Colour</string>
-    <string name="expression">Expression</string>
-    <string name="something_else">Something else</string>
-
+    <string name="splash_screen_content_usp1">Get personalised rewards &amp; redeem e-vouchers with Tack Points</string>
+    <string name="splash_screen_content_usp2">Enjoy member-exclusive events &amp; promotions</string>
+    <string name="splash_screen_content_usp3">Special perks for your little ones with IPC Små Club</string>
+    <string name="splash_screen_content_cta">Sign up as a Tack Club member today!</string>
+    <string name="splash_screen_button_content_cta">Log in to existing account</string>
+    <string name="sign_up_error_message">An OTP will be sent to you</string>
 
 
 

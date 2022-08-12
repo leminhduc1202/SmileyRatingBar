@@ -210,7 +210,7 @@
                     android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:srcCompat="@drawable/ic_logo"
+                    tools:srcCompat="@drawable/ic_ipc_logo"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/nps_file"

@@ -10,7 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.mdapp.smileyrating.R
 import com.mdapp.smileyrating.databinding.ActivitySignUpBinding
 import com.mdapp.smileyrating.ipcupdate.ui.SplashScreenIPC
-import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSliderAdapter
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -31,7 +31,7 @@ class SignUpActivity : AppCompatActivity() {
 
 
     private fun setViewPager() {
-        val adapter = IntroSilderAdapter(this)
+        val adapter = IntroSliderAdapter(this)
         binding.vpSlider.adapter = adapter
 
         fragmentList.addAll(listOf(

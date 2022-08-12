@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ipc3.splashscreen.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_ipc_logo" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpSplashScreen"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_52"
+        android:background="@drawable/background_card_view_signup"
+        android:fontFamily="@font/ikanosans_bold"
+        android:paddingVertical="@dimen/dp_16"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_68"
+        android:layout_marginHorizontal="@dimen/dp_52"
+        android:background="@drawable/background_card_view"
+        android:fontFamily="@font/ikanosans_bold"
+        android:paddingVertical="@dimen/dp_16"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/dp_26"
+        android:layout_marginTop="@dimen/dp_40"
+        android:fontFamily="@font/ikanosans_bold"
+        android:text="@string/ipc_skip"
+        android:textAlignment="center"
+        android:textColor="@color/blue_main_color"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <com.mdapp.smileyrating.ipcupdate.customlayout.IndicatorLayout
+        android:id="@+id/ilSplashScreen"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_31dp"
+        android:orientation="horizontal"
+        app:indicatorCount="5" />
+    <TextView
+        android:id="@+id/tvMayBeLater"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:fontFamily="@font/ikanosans_bold"
+        android:text="@string/maybe_later"
+        android:textAlignment="center"
+        android:textColor="@color/blue_main_color"
+        android:textSize="@dimen/dimen_16sp" />
+
+</RelativeLayout>

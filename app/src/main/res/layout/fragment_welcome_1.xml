@@ -6,26 +6,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white">
 
-    <ImageView
-        android:src="@drawable/ic_hey"
-        android:layout_marginBottom="@dimen/size_13dp"
-        android:layout_marginHorizontal="@dimen/dp_34"
-        app:layout_constraintBottom_toTopOf="@id/tvWelcome"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="434dp" />
 
-    <TextView
-        android:id="@+id/tvWelcome"
+    <ImageView
+        android:id="@+id/imgSplashContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:layout_marginHorizontal="@dimen/dp_34"
+        android:layout_marginBottom="@dimen/size_13dp"
+        android:layout_marginHorizontal="@dimen/dp_34"
+        app:layout_constraintBottom_toTopOf="@id/tvSplashContent"
+        tools:src="@drawable/ic_hey" />
+
+    <ImageView
+        android:id="@+id/imgSplashUSP1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_background_splash_usp1" />
+
+    <TextView
+        android:id="@+id/tvSplashContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_34"
         android:fontFamily="@font/ikanosans_bold"
-        android:text="@string/well_come"
+        tools:text="@string/well_come"
         android:textColor="@color/blue_main_color"
         android:textSize="@dimen/sp_50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSplashContentUsp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_34"
+        android:fontFamily="@font/ikanosans_bold"
+        android:textColor="@color/blue_main_color"
+        android:textSize="@dimen/sp40"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/splash_screen_content_usp2" />
+    <TextView
+        android:id="@+id/tvSplashContentUsp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_34"
+        android:fontFamily="@font/ikanosans_bold"
+        android:textColor="@color/blue_main_color"
+        android:textSize="@dimen/sp40"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/splash_screen_content_usp3" />
+
+    <ImageView
+        android:id="@+id/imgSplashUSP2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        tools:src="@drawable/ic_background_splash_usp2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

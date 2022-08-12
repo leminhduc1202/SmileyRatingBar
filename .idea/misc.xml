@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/background_card_view.xml" value="0.3635" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/background_card_view_signup.xml" value="0.2505" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/background_cobalt_radius_40.xml" value="0.3195" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/background_cobalt_radius_41.xml" value="0.2255" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/background_rounder_card_view.xml" value="0.1565" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3635" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/ic_minus.xml" value="0.3555" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable-v24/ic_plus.xml" value="0.3555" />
@@ -33,6 +36,9 @@
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/bg_number_notification.xml" value="0.2355" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/bg_profile_selector.xml" value="0.2355" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/bg_rewards_selector.xml" value="0.2355" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_backgroud_splash_usp2.xml" value="0.2645" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_background_splash.xml" value="0.17" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_background_splash_usp3.xml" value="0.1345" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.2845" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_baseline_document_scanner_24.xml" value="0.1855" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_close.xml" value="0.3635" />
@@ -41,6 +47,7 @@
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_home.xml" value="0.2355" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_home_enable.xml" value="0.2355" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3635" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_logo.xml" value="0.226" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_profile.xml" value="0.2355" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/ic_rewards.xml" value="0.2355" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/drawable/indicator_selected.xml" value="0.3635" />
@@ -58,6 +65,8 @@
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_sign_up_screen.xml" value="0.22" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_splash_screen_ipc.xml" value="0.22" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/activity_tack_club.xml" value="0.2" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_avatar_1.xml" value="0.33" />
@@ -69,8 +78,8 @@
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_home_page.xml" value="0.22" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_sign_up.xml" value="0.33" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_smiley.xml" value="0.12" />
-        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_1.xml" value="0.25" />
-        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_2.xml" value="0.19882246376811594" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_1.xml" value="0.22" />
+        <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_2.xml" value="0.25" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_3.xml" value="0.19882246376811594" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_4.xml" value="0.19882246376811594" />
         <entry key="..\:/Android Project/Persional Project/SmileyRatingBar/app/src/main/res/layout/fragment_welcome_5.xml" value="0.16" />

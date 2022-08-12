@@ -41,7 +41,7 @@ class IndicatorLayout: LinearLayout {
         removeAllViews()
         for(i in 0 until indicatorCount){
             val indicator = View(context)
-            val layoutParams = LayoutParams(px(10f), px(10f))
+            val layoutParams = LayoutParams(px(5f), px(5f))
             layoutParams.setMargins(px(3f),px(3f),px(3f),px(3f))
             indicator.layoutParams = layoutParams
             indicator.setBackgroundResource(R.drawable.indicator_unselected)

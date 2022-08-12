@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.mdapp.smileyrating.databinding.ActivityHomePageBinding
-import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSilderAdapter
+import com.mdapp.smileyrating.ipcupdate.ui.slideradapter.IntroSliderAdapter
 
 class HomePageActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class HomePageActivity : AppCompatActivity() {
     }
 
     private fun setViewPager() {
-        val adapter = IntroSilderAdapter(this)
+        val adapter = IntroSliderAdapter(this)
         binding.vpPager.adapter = adapter
 
         fragmentList.addAll(listOf(
