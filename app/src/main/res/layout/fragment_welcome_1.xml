@@ -83,4 +83,70 @@
         app:layout_constraintTop_toBottomOf="@id/guideline"
         tools:src="@drawable/ic_background_splash_usp2" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctLayoutAnimation"
+        app:layout_constraintTop_toBottomOf="@id/tvSplashContent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiLineLottie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieShapeAnimation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_rawRes="@raw/triangle_orange"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieExpressionAnimation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_38"
+            app:lottie_rawRes="@raw/expression_laugh"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"/>
+        <ImageView
+            android:id="@+id/imgHead"
+            android:src="@drawable/accessories_head_beauty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/dimen_55dp"
+            android:layout_height="@dimen/dimen_55dp"/>
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:src="@drawable/accessories_left_books"
+            android:layout_marginEnd="@dimen/dimen_50dp"
+            app:layout_constraintEnd_toStartOf="@id/guiLineLottie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="@dimen/dimen_55dp"
+            android:layout_height="@dimen/dimen_55dp"/>
+        <ImageView
+            android:id="@+id/imgRight"
+            android:src="@drawable/accessories_right_arts_crafts"
+            android:layout_marginStart="@dimen/dimen_50dp"
+            app:layout_constraintStart_toEndOf="@id/guiLineLottie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="@dimen/dimen_55dp"
+            android:layout_height="@dimen/dimen_55dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

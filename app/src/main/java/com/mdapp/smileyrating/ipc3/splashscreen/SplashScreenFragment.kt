@@ -73,6 +73,8 @@ class SplashScreenFragment : Fragment() {
                             visible()
                             setImageResource(R.drawable.ic_background_splash_usp1)
                         }
+                        lottieShapeAnimation.setAnimation(R.raw.green_i)
+                        lottieExpressionAnimation.setAnimation(R.raw.expression_shock)
                     }
                 }
                 USP_2_SCREEN -> {
